@@ -27,13 +27,16 @@ namespace NCSolution.Controllers
             {
                 return PartialView("_Register");
             }
-
-
-            return PartialView((IsLogin) ? "_Login" : "_Register");
-            
         }
+
         [HttpPost]
         public ActionResult Login(LoginUser LU)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(RegisterUser user)
         {
             return View();
         }

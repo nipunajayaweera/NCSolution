@@ -33,6 +33,28 @@
 
 <body class="login-container">
 
+    <!-- Main navbar -->
+    <div class="navbar navbar-default header-highlight">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="~/assets/images/logo_light.png" alt=""></a>
+
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+
+
+            <div class="navbar-right">
+                <p class="navbar-text">Morning, Victoria!</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
     <!-- Page container -->
     <div class="page-container">
 
@@ -43,24 +65,33 @@
             <div class="content-wrapper">
 
                 <!-- Content area -->
-                <div class="content pb-20">
+                <div class="content pb-20" style="margin-left: 10%; margin-right:10%">
 
                     <!-- Tabbed form -->
                     <div class="tabbable panel width-400">
 
                         <div class="tab-content panel-body">
                             <div class="tab-pane fade in active" id="basic-tab1">
-                                <form>
+                                <form style="padding-left: 10%; padding-right: 10%;);
+">
                                     <div class="text-center">
-                                        <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
-                                        <h5 class="content-group">Login to your account <small class="display-block">Your credentials</small></h5>
+                                        <img src="~/assets/images/logo_light.png" style="background: black;" alt="">
+                                        <h3 class="content-group"><u>Rules for the Conduct of Examinations</u></h3>
                                     </div>
-
+                                    <div class="text-left">
+                                        
+                                        <h6>1. No person will be allowed in an examination room during an examination except the candidates concerned and those supervising the examination.</h6>
+                                        <h6>2. Candidates must appear at the examination room at least twenty minutes before the commencement of the examination.</h6>
+                                        <h6>3. Candidates shall bring their photo identification (signed Photo ID) and place it in a conspicuous place on their desks. Photo identification may include any one of the following, as long as it contains a photo and a signature: current University of Toronto Photo ID (T-Card) OR up-to-date Passport (any country) OR current Driver’s License (any country) OR current Canadian health card (any province or territory).</h6>
+                                        <h6>4. Candidates shall place their watch or timepiece on their desks.</h6>
+                                        <h6>5. Candidates shall not communicate with one another in any manner whatsoever during the  examination. Candidates may not leave the examination room unescorted for any reason, and this includes using the washroom.</h6>
+                                        
+                                    </div>
                                     
 
                                     <div class="form-group">
                                         @*<button type="submit" class="btn bg-blue-400 btn-block">Move To Exam <i class="icon-arrow-right14 position-right"></i></button>*@
-                                        <input type="button" class="btn bg-blue-400 btn-block" value="Move To Exam" onclick="location.href='@Url.Action("Question", "Default")'" />
+                                        <input type="button" class="btn bg-blue-400 btn-block" value="Ready To Exam" onclick="location.href='@Url.Action("Question", "Default")'" />
                                     </div>
                                 </form>
                             </div>
