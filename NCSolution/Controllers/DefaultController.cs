@@ -29,5 +29,10 @@ namespace NCSolution.Controllers
             Q.QuestionNo = id;
             return PartialView("_LoadQue",Q);
         }
+
+        public ActionResult Exam()
+        {
+            return View("ExamDescription");
+        }
     }
 }
