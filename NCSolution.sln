@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCSolution.DataAccessLayer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCSolution.DomainModel", "NCSolution.DomainModel\NCSolution.DomainModel.csproj", "{53F5CB01-D46B-4B75-85A3-73587625C619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCSolution.Migrations", "NCSolution.Migrations\NCSolution.Migrations.csproj", "{A2EFADED-C84F-476B-9173-2C2CBE15FA5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{53F5CB01-D46B-4B75-85A3-73587625C619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F5CB01-D46B-4B75-85A3-73587625C619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F5CB01-D46B-4B75-85A3-73587625C619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2EFADED-C84F-476B-9173-2C2CBE15FA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2EFADED-C84F-476B-9173-2C2CBE15FA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2EFADED-C84F-476B-9173-2C2CBE15FA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2EFADED-C84F-476B-9173-2C2CBE15FA5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

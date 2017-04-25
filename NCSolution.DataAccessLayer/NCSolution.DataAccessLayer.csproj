@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\GenericRepository.cs" />
+    <Compile Include="Common\IGenericRepository.cs" />
+    <Compile Include="Common\IUnitOfWork.cs" />
+    <Compile Include="Common\UnitOfWork.cs" />
+    <Compile Include="NCSolutionDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,9 +59,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
     <Folder Include="Interface\" />
     <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCSolution.DomainModel\NCSolution.DomainModel.csproj">
+      <Project>{53f5cb01-d46b-4b75-85a3-73587625c619}</Project>
+      <Name>NCSolution.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
