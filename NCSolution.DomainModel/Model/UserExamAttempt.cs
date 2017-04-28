@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace NCSolution.DomainModel.Model
 {
     [Table("UserExamAttempt")]
-    public class UserExamAttempt
+    public class UserExamAttempt : AuditableEntity<long>
     {
         [Key, Column(Order = 0)]
         [ForeignKey("Exam")]
@@ -29,7 +29,10 @@ namespace NCSolution.DomainModel.Model
         public int Marks { get; set; }
         public bool PassofFail { get; set; }
         public DateTime ExamDate { get; set; }
-      
+
+        public virtual ICollection<UserExamAttemptQuestion> UserExamAttemptQuestionAnswer { get; set; }
+
+
 
     }
 }

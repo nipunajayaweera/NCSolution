@@ -19,7 +19,8 @@ namespace NCSolution.DomainModel.Model
 
         
         public virtual ICollection<ExamChapter> ExamChapters { get; set; }
-        
-        
+        public virtual ICollection<Question> Questions { get; set; }
+
+
     }
 }
