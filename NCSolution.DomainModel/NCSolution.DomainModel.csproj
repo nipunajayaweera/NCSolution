@@ -50,6 +50,7 @@
     <Compile Include="Common\IEntity.cs" />
     <Compile Include="Model\Chapter.cs" />
     <Compile Include="Model\Exam.cs" />
+    <Compile Include="Model\ExamChapter.cs" />
     <Compile Include="Model\LoginUser.cs" />
     <Compile Include="Model\UserExamAttempt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

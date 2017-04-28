@@ -55,6 +55,14 @@
     <Compile Include="Migrations\201704282120432_int1.Designer.cs">
       <DependentUpon>201704282120432_int1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704282145586_chapter_chapterexam_models.cs" />
+    <Compile Include="Migrations\201704282145586_chapter_chapterexam_models.Designer.cs">
+      <DependentUpon>201704282145586_chapter_chapterexam_models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704282148426_chapter_chapterexam_add_AuditableEntity.cs" />
+    <Compile Include="Migrations\201704282148426_chapter_chapterexam_add_AuditableEntity.Designer.cs">
+      <DependentUpon>201704282148426_chapter_chapterexam_add_AuditableEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +82,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704282120432_int1.resx">
       <DependentUpon>201704282120432_int1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704282145586_chapter_chapterexam_models.resx">
+      <DependentUpon>201704282145586_chapter_chapterexam_models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704282148426_chapter_chapterexam_add_AuditableEntity.resx">
+      <DependentUpon>201704282148426_chapter_chapterexam_add_AuditableEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

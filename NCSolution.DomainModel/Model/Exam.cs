@@ -22,6 +22,9 @@ namespace NCSolution.DomainModel.Model
         [JsonIgnore]
         public virtual ICollection<UserExamAttempt> UserExamAttempts { get; set; }
 
+        public virtual ICollection<ExamChapter> ExamChapters { get; set; }
+
+
 
     }
 }
