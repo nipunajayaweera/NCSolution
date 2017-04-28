@@ -13,15 +13,15 @@ namespace NCSolution.DomainModel.Model
     [Table("LoginUser")]
     public class LoginUser: AuditableEntity<long>
     {
-             
-        public string Email { get; set; }
-
+        [Key]
+        public int LoginUserId { get; set; }
+        public string Email { get; set; }  
         public string LoginUserName { get; set; }
         public int PhoneNumber { get; set; }
 
 
-       // [JsonIgnore]
-        //public virtual ICollection<UserExamAttempt> UserExamAttempts { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<UserExamAttempt> UserExamAttempts { get; set; }
 
 
 

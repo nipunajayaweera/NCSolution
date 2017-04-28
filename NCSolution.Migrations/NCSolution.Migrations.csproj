@@ -47,9 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201704252206499_init.cs" />
-    <Compile Include="Migrations\201704252206499_init.Designer.cs">
-      <DependentUpon>201704252206499_init.cs</DependentUpon>
+    <Compile Include="Migrations\201704282118158_int.cs" />
+    <Compile Include="Migrations\201704282118158_int.Designer.cs">
+      <DependentUpon>201704282118158_int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704282120432_int1.cs" />
+    <Compile Include="Migrations\201704282120432_int1.Designer.cs">
+      <DependentUpon>201704282120432_int1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,8 +69,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704252206499_init.resx">
-      <DependentUpon>201704252206499_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704282118158_int.resx">
+      <DependentUpon>201704282118158_int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704282120432_int1.resx">
+      <DependentUpon>201704282120432_int1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

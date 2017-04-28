@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NCSolution.DomainModel.Common
+namespace NCSolution.DomainModel.Model
 {
-
-    public interface IEntity<T>
+    public class Chapter
     {
-        
     }
 }
