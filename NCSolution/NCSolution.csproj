@@ -797,6 +797,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCSolution.BussinessLayer\NCSolution.BussinessLayer.csproj">
+      <Project>{19414ef4-b8de-4010-a498-4cb295ab2315}</Project>
+      <Name>NCSolution.BussinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCSolution.DomainModel\NCSolution.DomainModel.csproj">
+      <Project>{53f5cb01-d46b-4b75-85a3-73587625c619}</Project>
+      <Name>NCSolution.DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

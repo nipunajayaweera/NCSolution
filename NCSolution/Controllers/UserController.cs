@@ -1,4 +1,6 @@
-﻿using NCSolution.Models;
+﻿using NCSolution.BussinessLayer.Contracts;
+using NCSolution.BussinessLayer.Interface;
+using NCSolution.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +11,25 @@ namespace NCSolution.Controllers
 {
     public class UserController : Controller
     {
+
+        private ILoginUserService _loginUserService;
+                                                 
+
+        public UserController(ILoginUserService loginUserService)
+        {
+            _loginUserService = loginUserService;
+        }
+
+
         // GET: User
         public ActionResult Index()
         {
+
+            var username = _loginUserService.GetUserByUserName("sandun");
+
+
+
+
             return View();
         }
 
@@ -30,7 +48,7 @@ namespace NCSolution.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(LoginUser LU)
+        public ActionResult Login()
         {
             return View();
         }

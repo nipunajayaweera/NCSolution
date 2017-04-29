@@ -40,7 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comman\EntityService.cs" />
+    <Compile Include="Comman\IEntityService.cs" />
+    <Compile Include="Contracts\LoginUserService.cs" />
+    <Compile Include="Interface\ILoginUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCSolution.DataAccessLayer\NCSolution.DataAccessLayer.csproj">
+      <Project>{65929207-7d3f-487a-8078-b6e07229fe3b}</Project>
+      <Name>NCSolution.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCSolution.DomainModel\NCSolution.DomainModel.csproj">
+      <Project>{53f5cb01-d46b-4b75-85a3-73587625c619}</Project>
+      <Name>NCSolution.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

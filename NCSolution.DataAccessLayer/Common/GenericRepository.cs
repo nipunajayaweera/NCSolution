@@ -11,7 +11,7 @@ namespace NCSolution.DataAccessLayer.Common
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        protected DbContext _entities;
+        protected readonly DbContext _entities;
         protected readonly IDbSet<T> _dbset;
 
         public GenericRepository(DbContext context)

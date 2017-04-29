@@ -12,7 +12,7 @@ namespace NCSolution.DataAccessLayer.Common
         /// <summary>
         /// The DbContext
         /// </summary>
-        private DbContext _dbContext;
+        private  DbContext _dbContext;
 
         /// <summary>
         /// Initializes a new instance of the UnitOfWork class.
@@ -20,7 +20,6 @@ namespace NCSolution.DataAccessLayer.Common
         /// <param name="context">The object context</param>
         public UnitOfWork(DbContext context)
         {
-
             _dbContext = context;
         }
 
