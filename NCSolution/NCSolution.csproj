@@ -751,6 +751,9 @@
     </Compile>
     <Compile Include="Models\Que.cs" />
     <Compile Include="Models\UserViewModel.cs" />
+    <Compile Include="Modules\EFModule.cs" />
+    <Compile Include="Modules\RepositoryModule.cs" />
+    <Compile Include="Modules\ServiceModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -811,6 +814,10 @@
     <ProjectReference Include="..\NCSolution.BussinessLayer\NCSolution.BussinessLayer.csproj">
       <Project>{19414ef4-b8de-4010-a498-4cb295ab2315}</Project>
       <Name>NCSolution.BussinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCSolution.DataAccessLayer\NCSolution.DataAccessLayer.csproj">
+      <Project>{65929207-7d3f-487a-8078-b6e07229fe3b}</Project>
+      <Name>NCSolution.DataAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\NCSolution.DomainModel\NCSolution.DomainModel.csproj">
       <Project>{53f5cb01-d46b-4b75-85a3-73587625c619}</Project>
