@@ -24,7 +24,7 @@ namespace NCSolution.Controllers
         // GET: User
         public ActionResult Index()
         {
-
+            //testing method
             var username = _loginUserService.GetUserByUserName("sandun");
 
 
