@@ -83,6 +83,22 @@
     <Compile Include="Migrations\201704282213357_UserExamAttemptQuestion_AuditableEntity.Designer.cs">
       <DependentUpon>201704282213357_UserExamAttemptQuestion_AuditableEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705011102333_insertData1.cs" />
+    <Compile Include="Migrations\201705011102333_insertData1.Designer.cs">
+      <DependentUpon>201705011102333_insertData1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705011105517_insertData2.cs" />
+    <Compile Include="Migrations\201705011105517_insertData2.Designer.cs">
+      <DependentUpon>201705011105517_insertData2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705011224364_insertDatachapter.cs" />
+    <Compile Include="Migrations\201705011224364_insertDatachapter.Designer.cs">
+      <DependentUpon>201705011224364_insertDatachapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705011230267_insertDataquestions.cs" />
+    <Compile Include="Migrations\201705011230267_insertDataquestions.Designer.cs">
+      <DependentUpon>201705011230267_insertDataquestions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +110,10 @@
     <ProjectReference Include="..\NCSolution.DataAccessLayer\NCSolution.DataAccessLayer.csproj">
       <Project>{65929207-7d3f-487a-8078-b6e07229fe3b}</Project>
       <Name>NCSolution.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCSolution.DomainModel\NCSolution.DomainModel.csproj">
+      <Project>{53F5CB01-D46B-4B75-85A3-73587625C619}</Project>
+      <Name>NCSolution.DomainModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +143,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704282213357_UserExamAttemptQuestion_AuditableEntity.resx">
       <DependentUpon>201704282213357_UserExamAttemptQuestion_AuditableEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705011102333_insertData1.resx">
+      <DependentUpon>201705011102333_insertData1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705011105517_insertData2.resx">
+      <DependentUpon>201705011105517_insertData2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705011224364_insertDatachapter.resx">
+      <DependentUpon>201705011224364_insertDatachapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705011230267_insertDataquestions.resx">
+      <DependentUpon>201705011230267_insertDataquestions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

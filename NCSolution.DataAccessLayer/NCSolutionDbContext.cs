@@ -19,6 +19,11 @@ namespace NCSolution.DataAccessLayer
         public DbSet<LoginUser> LoginUsers { get; set; }
         public DbSet<Exam> Exams { get; set; }
         public DbSet<UserExamAttempt> UserExamAttempts { get; set; }
+        public DbSet<Chapter> Chapters{ get; set; }
+        public DbSet<ExamChapter> ExamChapters { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Choice> Choices{ get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
