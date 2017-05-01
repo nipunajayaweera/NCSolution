@@ -91,13 +91,9 @@
     <Compile Include="Migrations\201705011105517_insertData2.Designer.cs">
       <DependentUpon>201705011105517_insertData2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705011224364_insertDatachapter.cs" />
-    <Compile Include="Migrations\201705011224364_insertDatachapter.Designer.cs">
-      <DependentUpon>201705011224364_insertDatachapter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705011230267_insertDataquestions.cs" />
-    <Compile Include="Migrations\201705011230267_insertDataquestions.Designer.cs">
-      <DependentUpon>201705011230267_insertDataquestions.cs</DependentUpon>
+    <Compile Include="Migrations\201705011305089_insertQuestionchoices.cs" />
+    <Compile Include="Migrations\201705011305089_insertQuestionchoices.Designer.cs">
+      <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -150,11 +146,8 @@
     <EmbeddedResource Include="Migrations\201705011105517_insertData2.resx">
       <DependentUpon>201705011105517_insertData2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705011224364_insertDatachapter.resx">
-      <DependentUpon>201705011224364_insertDatachapter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705011230267_insertDataquestions.resx">
-      <DependentUpon>201705011230267_insertDataquestions.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705011305089_insertQuestionchoices.resx">
+      <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

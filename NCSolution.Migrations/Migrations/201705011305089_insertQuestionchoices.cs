@@ -6,7 +6,7 @@ namespace NCSolution.Migrations.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    public partial class insertDataquestions : DbMigration
+    public partial class insertQuestionchoices : DbMigration
     {
         NCSolutionDbContext context = new NCSolutionDbContext();
 
@@ -25,10 +25,13 @@ namespace NCSolution.Migrations.Migrations
 
             var chapters = context.Database.SqlQuery<Chapter>("Select * from chapter").ToListAsync().Result;
 
+            int quesnumber = 1;
+
             foreach (Chapter item in chapters)
             {
                 for (int i = 0; i < 15; i++)
                 {
+
                     Question q = new Question
                     {
                         ChapterId = item.ChapterId,
@@ -37,7 +40,7 @@ namespace NCSolution.Migrations.Migrations
                         Language = "ENG",
                         NumberOfChoices = 4,
                         Priority = 0,
-                        QuestionContent = RandomString(6),
+                        QuestionContent = "Q" + quesnumber + "-" + RandomString(6),
                         Explantion = "xxxxx",
                         CreatedDate = DateTime.Now,
                         CreatedBy = "sandun",
@@ -51,12 +54,12 @@ namespace NCSolution.Migrations.Migrations
                     context.SaveChanges();
 
 
-                    for (int k = 0; k < 4; k++)
+                    for (int k = 1; k < 5; k++)
                     {
                         Choice c = new Choice()
                         {
                             QuestionId = q.QuestionId,
-                            ChoiceString = RandomString(4),
+                            ChoiceString = "Q" + quesnumber + "-C" + k + "-" + RandomString(4),
                             IsJumble = false,
                             Order = k,
                             CorrentOrWrong = k == 2 ? true : false
@@ -66,6 +69,7 @@ namespace NCSolution.Migrations.Migrations
                         context.SaveChanges();
 
                     }
+                    quesnumber++;
 
                 }
 
