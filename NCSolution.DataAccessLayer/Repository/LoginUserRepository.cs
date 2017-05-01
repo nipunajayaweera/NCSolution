@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Data.SqlClient;
 
 namespace NCSolution.DataAccessLayer.Repository
 {
@@ -23,5 +24,14 @@ namespace NCSolution.DataAccessLayer.Repository
             LoginUser user = _dbset.Where(o => o.LoginUserName.Equals(loginUserName)).First();
             return user != null ? user : null;
         }
+
+        public override IEnumerable<LoginUser> GetAll()
+        {
+            return _entities.Database.SqlQuery<LoginUser>("sp_GetAllLoginUsers").ToList<LoginUser>();
+                         
+        }
+
+
+
     }
 }

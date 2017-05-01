@@ -8,14 +8,15 @@ using NCSolution.DomainModel.Model;
 using NCSolution.DataAccessLayer.Common;
 using NCSolution.DataAccessLayer.Interface;
 
+
 namespace NCSolution.BussinessLayer.Contracts
 {
-    public class LoginUserService : ILoginUserService
+    public class LoginUserService  : ILoginUserService 
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILoginUserRepository _loginUserRepository;
                   
-        public LoginUserService(IUnitOfWork unitOfWork, ILoginUserRepository loginUserRepository)
+        public LoginUserService(IUnitOfWork unitOfWork, ILoginUserRepository loginUserRepository) 
         {
             _unitOfWork = unitOfWork;
             _loginUserRepository = loginUserRepository;
@@ -25,5 +26,16 @@ namespace NCSolution.BussinessLayer.Contracts
         {
             return _loginUserRepository.GetUserByUserName(loginUserName);
         }
+
+
+        public  IEnumerable<LoginUser> GetAll()
+        {
+            return _loginUserRepository.GetAll();
+        }
+
+
+
+
+
     }
 }

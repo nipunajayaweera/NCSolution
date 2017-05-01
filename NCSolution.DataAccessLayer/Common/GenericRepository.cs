@@ -16,6 +16,7 @@ namespace NCSolution.DataAccessLayer.Common
 
         public GenericRepository(DbContext context)
         {
+            
             _entities = context;
             _dbset = context.Set<T>();
         }

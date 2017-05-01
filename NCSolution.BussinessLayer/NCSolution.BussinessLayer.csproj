@@ -40,8 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comman\EntityService.cs" />
-    <Compile Include="Comman\IEntityService.cs" />
     <Compile Include="Contracts\LoginUserService.cs" />
     <Compile Include="Interface\ILoginUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

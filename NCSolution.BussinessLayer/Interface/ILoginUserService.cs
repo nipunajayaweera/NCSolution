@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace NCSolution.BussinessLayer.Interface
 {
-    public interface ILoginUserService
+    public interface ILoginUserService   
     {
         LoginUser GetUserByUserName(string loginUserName);
+        IEnumerable<LoginUser> GetAll();
     }
 }

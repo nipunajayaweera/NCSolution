@@ -1,6 +1,6 @@
 ﻿using NCSolution.BussinessLayer.Contracts;
 using NCSolution.BussinessLayer.Interface;
-using NCSolution.Models;
+using NCSolution.DomainModel.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,9 +25,14 @@ namespace NCSolution.Controllers
         public ActionResult Index()
         {
             //testing method
-            var username = _loginUserService.GetUserByUserName("sandun");
+             var username = _loginUserService.GetUserByUserName("sandun");
 
+            //using sps
+           var list =  _loginUserService.GetAll().ToList<LoginUser>();
+            foreach (LoginUser item in list)
+            {
 
+            }
 
 
             return View();
@@ -53,10 +58,10 @@ namespace NCSolution.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Register(RegisterUser user)
-        {
-            return View();
-        }
+        //[HttpPost]
+        //public ActionResult Register(RegisterUser user)
+        //{
+        //    return View();
+        //}
     }
 }
