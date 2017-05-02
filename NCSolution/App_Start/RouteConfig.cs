@@ -13,11 +13,11 @@ namespace NCSolution
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Login",
-                url: "User/Login",
-                defaults: new { controller = "Default", action = "Exam" }
-            );
+            //routes.MapRoute(
+            //    name: "Login",
+            //    url: "User/Login",
+            //    defaults: new { controller = "Default", action = "Exam" }
+            //);
             routes.MapRoute(
                 name: "ExamDescription",
                 url: "Default/Question",

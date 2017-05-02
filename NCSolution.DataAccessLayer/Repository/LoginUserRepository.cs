@@ -21,7 +21,7 @@ namespace NCSolution.DataAccessLayer.Repository
 
         public LoginUser GetUserByUserName(string loginUserName)
         {
-            LoginUser user = _dbset.Where(o => o.LoginUserName.Equals(loginUserName)).First();
+            LoginUser user = _dbset.Where(o => o.LoginUserName.Equals(loginUserName)).FirstOrDefault();
             return user != null ? user : null;
         }
 

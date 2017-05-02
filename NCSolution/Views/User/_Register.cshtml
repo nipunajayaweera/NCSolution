@@ -1,5 +1,15 @@
-﻿@using (@Html.BeginForm("Register", "User", FormMethod.Post))
-{   
+﻿@model NCSolution.Models.RegisterUserVM
+@using (@Html.BeginForm("Register", "User", FormMethod.Post))
+{
+
+    <script>
+    $(document).ready(function(){
+        $("#NIC").blur(function(){
+            $.post("@Url.Action("Register", "User")");
+            
+        });
+    });
+    </script>
 <div class="tab-pane fade in active " id="basic-tab2">
     <form action="http://demo.interface.club/limitless/layout_2/LTR/material/index.html">
         <div class="text-center">
@@ -8,7 +18,8 @@
         </div>
 
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Your NIC Number">
+            @*<input type="text" class="form-control" placeholder="Your NIC Number" maxlength="10">*@
+            @Html.TextBoxFor(o => o.NIC, new { id="NIC", @class = "form-control", placeholder = "Your NIC Number", maxlength = "10" })
             <div class="form-control-feedback">
                 <i class="icon-user-check text-muted"></i>
             </div>
