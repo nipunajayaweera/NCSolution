@@ -17,6 +17,11 @@ namespace NCSolution.Migrations.Migrations
         Exam examTwo;
         Exam examOne;
 
+        Chapter chapterOne;
+        Chapter chapterTwo;
+        Chapter chapterThree;
+        Chapter chapterFour;
+
         public override void Up()
         {
 
@@ -33,6 +38,51 @@ namespace NCSolution.Migrations.Migrations
             context.Exams.AddOrUpdate(examOne, examTwo);
 
             context.SaveChanges();
+
+
+            chapterOne = new Chapter {
+                ChapterName = "chapter One",
+                ChapterDescription = "CXXXXXX",
+                CreatedDate = DateTime.Now,
+                CreatedBy = "sandun",
+                UpdatedDate = DateTime.Now,
+                UpdatedBy = "sandun"
+            };
+            chapterTwo = new Chapter
+            {
+                ChapterName = "chapter Two",
+                ChapterDescription = "CXXXXXX",
+                CreatedDate = DateTime.Now,
+                CreatedBy = "sandun",
+                UpdatedDate = DateTime.Now,
+                UpdatedBy = "sandun"
+            };
+
+            chapterThree = new Chapter
+            {
+                ChapterName = "chapter Three",
+                ChapterDescription = "CXXXXXX",
+                CreatedDate = DateTime.Now,
+                CreatedBy = "sandun",
+                UpdatedDate = DateTime.Now,
+                UpdatedBy = "sandun"
+            };
+
+            chapterFour = new Chapter
+            {
+                ChapterName = "chapter Four",
+                ChapterDescription = "CXXXXXX",
+                CreatedDate = DateTime.Now,
+                CreatedBy = "sandun",
+                UpdatedDate = DateTime.Now,
+                UpdatedBy = "sandun"
+            };
+
+            context.Chapters.AddOrUpdate(chapterOne, chapterTwo,chapterThree,chapterFour);
+
+            context.SaveChanges();
+
+
 
 
         }

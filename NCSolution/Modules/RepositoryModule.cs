@@ -25,7 +25,7 @@ namespace NCSolution.Modules
             builder.RegisterType(typeof(LoginUserRepository)).As(typeof(ILoginUserRepository)).InstancePerLifetimeScope();
 
 
-            builder.RegisterType(typeof(NCSolution.BussinessLayer.Contracts.LoginUserService)).As(typeof(NCSolution.BussinessLayer.Interface.ILoginUserService)).InstancePerLifetimeScope();
+            builder.RegisterType(typeof(LoginUserService)).As(typeof(ILoginUserService)).InstancePerLifetimeScope();
 
 
 
