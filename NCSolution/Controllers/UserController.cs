@@ -1,6 +1,7 @@
 ﻿using NCSolution.BussinessLayer.Contracts;
 using NCSolution.BussinessLayer.Interface;
 using NCSolution.DomainModel.Model;
+using NCSolution.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,14 +26,14 @@ namespace NCSolution.Controllers
         public ActionResult Index()
         {
             //testing method
-             var username = _loginUserService.GetUserByUserName("sandun");
+             //var username = _loginUserService.GetUserByUserName("sandun");
 
             //using sps
-           var list =  _loginUserService.GetAll().ToList<LoginUser>();
-            foreach (LoginUser item in list)
-            {
+           //var list =  _loginUserService.GetAll().ToList<LoginUser>();
+            //foreach (LoginUser item in list)
+            //{
 
-            }
+            //}
 
 
             return View();
@@ -43,8 +44,8 @@ namespace NCSolution.Controllers
             
             if (IsLogin)
             {
-                LoginUser LU = new LoginUser();
-                return PartialView("_Login",LU);
+                LoginUserVM LU = new LoginUserVM();
+                return PartialView("_Login");
             }
             else
             {
@@ -53,15 +54,25 @@ namespace NCSolution.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login()
+        public ActionResult Login(LoginUserVM lu)
+        {
+            var usr = _loginUserService.GetUserByUserName(lu.UserName);
+
+            if (usr != null)
+            {
+                if (usr.Email == lu.Password)
+                {
+                    return RedirectToAction("Exam", "Default");
+                }
+
+            }
+            return View("Index");
+        }
+
+        [HttpPost]
+        public ActionResult Register(RegisterUserVM user)
         {
             return View();
         }
-
-        //[HttpPost]
-        //public ActionResult Register(RegisterUser user)
-        //{
-        //    return View();
-        //}
     }
 }

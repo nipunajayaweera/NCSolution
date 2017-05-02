@@ -9,17 +9,18 @@ namespace NCSolution.Models
     class UserViewModel
     {
     }
-    public class LoginUser
+    public class LoginUserVM
     {
         public string UserName { get; set; }
         public string Password { get; set; }
 
     }
 
-    public class RegisterUser
+    public class RegisterUserVM
     {
         public string Name { get; set; }
         public string NIC { get; set; }
-
+        public string Password { get; set; }
+        public string Email { get; set; }
     }
 }
