@@ -56,17 +56,18 @@ namespace NCSolution.Controllers
         [HttpPost]
         public ActionResult Login(LoginUserVM lu)
         {
-            var usr = _loginUserService.GetUserByUserName(lu.UserName);
+            //var usr = _loginUserService.GetUserByUserName(lu.UserName);
 
-            if (usr != null)
-            {
-                if (usr.Email == lu.Password)
-                {
-                    return RedirectToAction("Exam", "Default");
-                }
+            //if (usr != null)
+            //{
+            //    if (usr.Email == lu.Password)
+            //    {
+            //        return RedirectToAction("Exam", "Default");
+            //    }
 
-            }
-            return View("Index");
+            //}
+            //return View("Index");
+            return RedirectToAction("Exam", "Default");
         }
 
         [HttpPost]

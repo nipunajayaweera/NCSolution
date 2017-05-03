@@ -750,6 +750,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Que.cs" />
+    <Compile Include="Models\QuestionHelper.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Modules\EFModule.cs" />
     <Compile Include="Modules\RepositoryModule.cs" />
