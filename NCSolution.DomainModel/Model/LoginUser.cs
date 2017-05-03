@@ -18,7 +18,8 @@ namespace NCSolution.DomainModel.Model
         public string Email { get; set; }  
         public string LoginUserName { get; set; }
         public int PhoneNumber { get; set; }
-
+        public string Nic { get; set; }
+        public string Password { get; set; }
 
         [JsonIgnore]
         public virtual ICollection<UserExamAttempt> UserExamAttempts { get; set; }

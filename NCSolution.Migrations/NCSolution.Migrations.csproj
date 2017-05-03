@@ -95,6 +95,10 @@
     <Compile Include="Migrations\201705011305089_insertQuestionchoices.Designer.cs">
       <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705021931219_add2feildstoLoginuser.cs" />
+    <Compile Include="Migrations\201705021931219_add2feildstoLoginuser.Designer.cs">
+      <DependentUpon>201705021931219_add2feildstoLoginuser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -148,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705011305089_insertQuestionchoices.resx">
       <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705021931219_add2feildstoLoginuser.resx">
+      <DependentUpon>201705021931219_add2feildstoLoginuser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
