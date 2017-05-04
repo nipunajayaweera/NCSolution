@@ -95,6 +95,26 @@
     <Compile Include="Migrations\201705011305089_insertQuestionchoices.Designer.cs">
       <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705021931219_add2feildstoLoginuser.cs" />
+    <Compile Include="Migrations\201705021931219_add2feildstoLoginuser.Designer.cs">
+      <DependentUpon>201705021931219_add2feildstoLoginuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705030843260_insertExamchapter.cs" />
+    <Compile Include="Migrations\201705030843260_insertExamchapter.Designer.cs">
+      <DependentUpon>201705030843260_insertExamchapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705030848331_insertQuestionpart2.cs" />
+    <Compile Include="Migrations\201705030848331_insertQuestionpart2.Designer.cs">
+      <DependentUpon>201705030848331_insertQuestionpart2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705030918426_userloginExamsdata_insert.cs" />
+    <Compile Include="Migrations\201705030918426_userloginExamsdata_insert.Designer.cs">
+      <DependentUpon>201705030918426_userloginExamsdata_insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705030945578_inserdatatoexamchpter2.cs" />
+    <Compile Include="Migrations\201705030945578_inserdatatoexamchpter2.Designer.cs">
+      <DependentUpon>201705030945578_inserdatatoexamchpter2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -148,6 +168,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705011305089_insertQuestionchoices.resx">
       <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705021931219_add2feildstoLoginuser.resx">
+      <DependentUpon>201705021931219_add2feildstoLoginuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705030843260_insertExamchapter.resx">
+      <DependentUpon>201705030843260_insertExamchapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705030848331_insertQuestionpart2.resx">
+      <DependentUpon>201705030848331_insertQuestionpart2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705030918426_userloginExamsdata_insert.resx">
+      <DependentUpon>201705030918426_userloginExamsdata_insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705030945578_inserdatatoexamchpter2.resx">
+      <DependentUpon>201705030945578_inserdatatoexamchpter2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
