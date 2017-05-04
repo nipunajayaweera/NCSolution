@@ -744,6 +744,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -801,6 +802,9 @@
     <Content Include="Views\User\_Login.cshtml" />
     <Content Include="Views\User\_Register.cshtml" />
     <Content Include="Views\Default\ExamDescription.cshtml" />
+    <Content Include="Views\Share\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Add_New_Question.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

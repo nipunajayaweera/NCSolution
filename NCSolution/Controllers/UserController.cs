@@ -56,7 +56,7 @@ namespace NCSolution.Controllers
         [HttpPost]
         public ActionResult Login(LoginUserVM lu)
         {
-            var usr = _loginUserService.GetUserByUserName(lu.UserName);
+            //var usr = _loginUserService.GetUserByUserName(lu.UserName);
 
             //if (usr != null)
             //{
@@ -68,15 +68,15 @@ namespace NCSolution.Controllers
             //}
             //return View("Index");
                     return RedirectToAction("Exam", "Default");
-                }
-                    else
-                    {
-                        ModelState.AddModelError("Password", "Password incorrect");
-                        return View("Index",lu);
-                    }
+            //    }
+            //        else
+            //        {
+            //            ModelState.AddModelError("Password", "Password incorrect");
+            //            return View("Index",lu);
+            //        }
 
-            }
-            return View("Index");
+            //}
+            //return View("Index");
         }
 
         [HttpPost]
