@@ -111,9 +111,9 @@
     <Compile Include="Migrations\201705030918426_userloginExamsdata_insert.Designer.cs">
       <DependentUpon>201705030918426_userloginExamsdata_insert.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705030945578_inserdatatoexamchpter2.cs" />
-    <Compile Include="Migrations\201705030945578_inserdatatoexamchpter2.Designer.cs">
-      <DependentUpon>201705030945578_inserdatatoexamchpter2.cs</DependentUpon>
+    <Compile Include="Migrations\201705040430282_attributeforxams_isavtive.cs" />
+    <Compile Include="Migrations\201705040430282_attributeforxams_isavtive.Designer.cs">
+      <DependentUpon>201705040430282_attributeforxams_isavtive.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,8 +181,8 @@
     <EmbeddedResource Include="Migrations\201705030918426_userloginExamsdata_insert.resx">
       <DependentUpon>201705030918426_userloginExamsdata_insert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705030945578_inserdatatoexamchpter2.resx">
-      <DependentUpon>201705030945578_inserdatatoexamchpter2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705040430282_attributeforxams_isavtive.resx">
+      <DependentUpon>201705040430282_attributeforxams_isavtive.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

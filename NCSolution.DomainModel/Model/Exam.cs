@@ -18,6 +18,8 @@ namespace NCSolution.DomainModel.Model
         public string ExamDescription { get; set; }
         public  new DateTime CreatedDate { get; set; }
         public int TotalQuestions { get; set; }
+        public bool IsActive { get; set; }
+
 
         [JsonIgnore]
         public virtual ICollection<UserExamAttempt> UserExamAttempts { get; set; }

@@ -7,13 +7,13 @@ namespace NCSolution.Migrations.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class inserdatatoexamchpter2 : IMigrationMetadata
+    public sealed partial class attributeforxams_isavtive : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(inserdatatoexamchpter2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(attributeforxams_isavtive));
         
         string IMigrationMetadata.Id
         {
-            get { return "201705030945578_inserdatatoexamchpter2"; }
+            get { return "201705040430282_attributeforxams_isavtive"; }
         }
         
         string IMigrationMetadata.Source
