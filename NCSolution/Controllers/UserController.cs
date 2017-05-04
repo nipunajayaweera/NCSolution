@@ -56,16 +56,35 @@ namespace NCSolution.Controllers
         [HttpPost]
         public ActionResult Login(LoginUserVM lu)
         {
-            var usr = _loginUserService.GetUserByUserName(lu.UserName);
-
-            if (usr != null)
+            
+            if (ModelState.IsValid)
             {
-                if (usr.Email == lu.Password)
+                var usr = _loginUserService.GetUserByUserName(lu.UserName);
+
+                if (usr != null)
                 {
-                    return RedirectToAction("Exam", "Default");
+                    if (usr.Email == lu.Password)
+                    {
+                        return RedirectToAction("Exam", "Default");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("Password", "Password incorrect");
+                        return View("Index",lu);
+                    }
+
+                }
+                else
+                {
+                    ModelState.AddModelError("UserName","Incorrect Username");
+                    ModelState.AddModelError("Password", "Password incorrect");
+                    return View("Index", lu);
+
                 }
 
             }
+
+
             return View("Index");
         }
 
