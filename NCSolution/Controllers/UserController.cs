@@ -85,7 +85,7 @@ namespace NCSolution.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register(RegisterUserVM user)
+        public ActionResult Register(string user)
         {
             return View();
         }
