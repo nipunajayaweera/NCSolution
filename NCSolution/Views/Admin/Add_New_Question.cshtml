@@ -1,70 +1,66 @@
-﻿
+﻿@model NCSolution.Models.AddNewQuestion
 @{
     ViewBag.Title = "Add_New_Question";
     Layout = "~/Views/Share/_AdminLayout.cshtml";
 }
 
-
+@using (@Html.BeginForm("AddNewQuestion", "Admin", FormMethod.Post))
+{
 <div class="alert alert-component" style="background-color:white">
-    <h6 class="alert-heading text-semibold">Add A New Question </h6>
-    <div style="min-height:300px; padding-left:10px;">
+    <h4 class="alert-heading text-semibold">Add A New Question </h4>
+    <div style="min-height:300px; padding:40px;">
 
         <div class="form-group has-feedback has-feedback-left">
-            @*<input type="text" class="form-control" placeholder="Question" name="question" required="required">
-            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Username", required = "required" })
-            <div class="text-danger">
-                @Html.ValidationMessageFor(model => model.UserName)
-            </div>
+            @Html.TextAreaFor(m => m.Question, new { @class = "form-control", placeholder = "Question", required = "required" })
             <div class="form-control-feedback">
-                <i class="icon-user text-muted"></i>
-            </div>*@
-            <textarea name="ss" placeholder="Question" class="form-control"></textarea>
+                <i class="icon-help text-muted"></i>
+            </div>
+        </div>
+        <div class="form-group has-feedback has-feedback-left">
+            @*<input type="text" class="form-control" placeholder="Answer 1" name="answer1" required="required">*@
+            @Html.TextBoxFor(m => m.Answer1, new { @class = "form-control", placeholder = "Answer 1", required = "required" })
             <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
             </div>
         </div>
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Answer 1" name="answer1" required="required">
-            
+            @Html.TextBoxFor(m => m.Answer2, new { @class = "form-control", placeholder = "Answer 2", required = "required" })
             <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
             </div>
         </div>
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Answer 2" name="answer2" required="required">
+            @Html.TextBoxFor(m => m.Answer3, new { @class = "form-control", placeholder = "Answer 3", required = "required" })
 
             <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
             </div>
         </div>
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Answer 3" name="answer3" required="required">
+            @Html.TextBoxFor(m => m.Answer4, new { @class = "form-control", placeholder = "Answer 4", required = "required" })
 
             <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
             </div>
         </div>
+
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Answer 4" name="answer4" required="required">
-
+            @Html.DropDownListFor(m => m.CorrectAnswer, Model.AnswersList, "-- Select Correct Answer --", new { @class = "form-control", required = "required" })
             <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
             </div>
         </div>
+
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Correct Answer" name="correctAnswer" required="required">
-
+            @Html.DropDownListFor(m => m.Chapter, Model.ChaptersList, "-- Select Chapter --", new { @class = "form-control", required = "required" })
             <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
             </div>
         </div>
+
         <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Answer 4" name="answer4" required="required">
-
-            <div class="form-control-feedback">
-                <i class="icon-user text-muted"></i>
-            </div>
+            <button type="submit" class="btn btn-primary legitRipple pull-right">Save <i class="icon-plus22 position-right"></i></button>
         </div>
-        <button type="submit" class="btn btn-primary legitRipple pull-right">Next <i class="icon-arrow-right14 position-right"></i></button>
     </div>
 </div>
+}

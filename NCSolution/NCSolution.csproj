@@ -752,6 +752,7 @@
     </Compile>
     <Compile Include="Models\Que.cs" />
     <Compile Include="Models\QuestionHelper.cs" />
+    <Compile Include="Models\QuestionViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Modules\EFModule.cs" />
     <Compile Include="Modules\RepositoryModule.cs" />
@@ -805,6 +806,7 @@
     <Content Include="Views\Share\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Add_New_Question.cshtml" />
+    <Content Include="Views\Admin\ShowQuestion.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

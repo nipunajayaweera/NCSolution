@@ -67,6 +67,11 @@ namespace NCSolution.Controllers
 
             //}
             //return View("Index");
+
+            if (lu.UserName == "admin")
+            {
+                return RedirectToAction("Index","Admin");
+            }
                     return RedirectToAction("Exam", "Default");
             //    }
             //        else
