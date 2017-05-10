@@ -115,6 +115,10 @@
     <Compile Include="Migrations\201705040430282_attributeforxams_isavtive.Designer.cs">
       <DependentUpon>201705040430282_attributeforxams_isavtive.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705100921290_insertExamusrAttemptQuestions.cs" />
+    <Compile Include="Migrations\201705100921290_insertExamusrAttemptQuestions.Designer.cs">
+      <DependentUpon>201705100921290_insertExamusrAttemptQuestions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -183,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705040430282_attributeforxams_isavtive.resx">
       <DependentUpon>201705040430282_attributeforxams_isavtive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705100921290_insertExamusrAttemptQuestions.resx">
+      <DependentUpon>201705100921290_insertExamusrAttemptQuestions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
