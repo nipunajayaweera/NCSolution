@@ -11,5 +11,6 @@ namespace NCSolution.BussinessLayer.Interface
     {
         LoginUser GetUserByUserName(string loginUserName);
         IEnumerable<LoginUser> GetAll();
+        List<Question> QuestionsForNextExamAttempt(int loginUserId);
     }
 }

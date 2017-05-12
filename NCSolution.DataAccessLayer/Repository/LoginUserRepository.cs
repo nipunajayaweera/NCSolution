@@ -31,7 +31,10 @@ namespace NCSolution.DataAccessLayer.Repository
                          
         }
 
-
-
+        public List<Question> QuestionsForNextExamAttempt(int loginUserId)
+        {
+            List<Question> orderedList = _entities.Database.SqlQuery<Question>("sp_GenerateQuestions @LoginUserId={0}",loginUserId).ToList<Question>();
+            return orderedList;
+        }
     }
 }

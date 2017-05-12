@@ -33,9 +33,9 @@ namespace NCSolution.BussinessLayer.Contracts
             return _loginUserRepository.GetAll();
         }
 
-
-
-
-
+        public List<Question> QuestionsForNextExamAttempt(int loginUserId)
+        {
+            return _loginUserRepository.QuestionsForNextExamAttempt(loginUserId);
+        }
     }
 }

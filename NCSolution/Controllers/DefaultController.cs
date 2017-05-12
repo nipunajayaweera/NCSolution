@@ -1,4 +1,6 @@
-﻿using NCSolution.Models;
+﻿using NCSolution.BussinessLayer.Interface;
+using NCSolution.DomainModel.Model;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +11,21 @@ namespace NCSolution.Controllers
 {
     public class DefaultController : Controller
     {
-        public static List<Que> QuestionList = new List<Que>();
+        private ILoginUserService _loginUserService;
+        public static  List<Question> _questionList;
+        public DefaultController(ILoginUserService loginUserService)
+        {
+            _loginUserService = loginUserService;
+
+            _questionList = new List<DomainModel.Model.Question>();
+
+        }
+
+
+        
         private void AddQuestions()
         {
-            Que q ;
-            for (int i = 1; i < 41; i++)
-            {
-                q = new Que();
-                q.QuestionNo = i;
-                q.Question = "you Question " + i;
-                QuestionList.Add(q);
-            }
+            
         }
 
 
@@ -33,22 +39,23 @@ namespace NCSolution.Controllers
         {
             //Que Q = new Que();
             //Q.QuestionNo = id;
-            Que Q = new Que();
-            Q = QuestionList[id-1];
+            
+            Question Q = _questionList[id-1];
             return View(Q);
         }
 
         public ActionResult LoadQue(int id)
         {
-            Que Q = new Que();
+            
             //Q.QuestionNo = id;
-            Q = QuestionList[id-1];
+            Question Q = _questionList[id-1];
             return PartialView("_LoadQue",Q);
         }
 
         public ActionResult Exam()
         {
-            AddQuestions();
+            _questionList = _loginUserService.QuestionsForNextExamAttempt(1016);
+            //AddQuestions();
             return View("ExamDescription");
         }
     }

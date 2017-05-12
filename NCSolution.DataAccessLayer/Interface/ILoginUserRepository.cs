@@ -12,5 +12,7 @@ namespace NCSolution.DataAccessLayer.Interface
     {
         LoginUser GetUserByUserName(string loginUserName);
 
+        List<Question> QuestionsForNextExamAttempt(int loginUserId);
+
     }
 }
