@@ -26,9 +26,9 @@ namespace NCSolution.DomainModel.Model
         public string Tag { get; set; }
 
 
-        [ForeignKey("Chapter")]
-        public int ChapterId { get; set; }
-        public  Chapter Chapter { get; set; }
+        [ForeignKey("Section")]
+        public int SectionId { get; set; }
+        public Section Section { get; set; }
 
         public virtual ICollection<Image> Images { get; set; }
         public virtual ICollection<Choice> Choices { get; set; }

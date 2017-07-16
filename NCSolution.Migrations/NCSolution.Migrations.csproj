@@ -51,6 +51,10 @@
     <Compile Include="Migrations\201707160809055_julydeploy.Designer.cs">
       <DependentUpon>201707160809055_julydeploy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707161918441_sectiontable.cs" />
+    <Compile Include="Migrations\201707161918441_sectiontable.Designer.cs">
+      <DependentUpon>201707161918441_sectiontable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -71,6 +75,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201707160809055_julydeploy.resx">
       <DependentUpon>201707160809055_julydeploy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161918441_sectiontable.resx">
+      <DependentUpon>201707161918441_sectiontable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
