@@ -3,7 +3,7 @@ namespace NCSolution.Migrations.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class add2feildstoLoginuser : DbMigration
+    public partial class julydeploy : DbMigration
     {
         public override void Up()
         {

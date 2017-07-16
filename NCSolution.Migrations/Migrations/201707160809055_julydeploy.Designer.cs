@@ -7,13 +7,13 @@ namespace NCSolution.Migrations.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class insertQuestionchoices : IMigrationMetadata
+    public sealed partial class julydeploy : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(insertQuestionchoices));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(julydeploy));
         
         string IMigrationMetadata.Id
         {
-            get { return "201705011305089_insertQuestionchoices"; }
+            get { return "201707160809055_julydeploy"; }
         }
         
         string IMigrationMetadata.Source

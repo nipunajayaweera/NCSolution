@@ -60,7 +60,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\NCSolution.DomainModel\NCSolution.DomainModel.csproj">
       <Project>{53f5cb01-d46b-4b75-85a3-73587625c619}</Project>
