@@ -29,6 +29,7 @@
     <script src="~/assets/js/plugins/forms/styling/switchery.min.js"></script>
     <script src="~/assets/js/pages/form_checkboxes_radios.js"></script>
     <script type="text/javascript" src="~/assets/js/pages/dashboard.js"></script>
+    <script type="text/javascript" src="~/assets/js/pages/form_checkboxes_radios.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/ui/ripple.min.js"></script>
     <script>
         var topNavBar = 50;
@@ -46,7 +47,7 @@
 <body>
 
     <!-- Main navbar -->
-    <div class="navbar navbar-default header-highlight">
+    <div class="navbar navbar-default navbar-fixed-top header-highlight">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html"><img src="~/assets/images/logo_light.png" alt=""></a>
 
@@ -75,7 +76,7 @@
         <div class="page-content">
 
             <!-- Main sidebar -->
-            <div class="sidebar sidebar-main sidebar-fixed" style="overflow-y: auto; z-index:9999;">
+            <div class="sidebar sidebar-main sidebar-fixed" style="overflow-y: auto;">
                 <div class="sidebar-content">
 
                     <!-- Main navigation -->
@@ -113,7 +114,7 @@
             <div class="content-wrapper">
 
                 <!-- Content area -->
-                <div class="content">
+                <div class="content" style="margin-top: 40px;">
                     @RenderBody()
 
 
