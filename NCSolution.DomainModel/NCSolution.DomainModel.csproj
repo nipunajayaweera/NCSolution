@@ -48,6 +48,7 @@
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Common\IAuditableEntity.cs" />
     <Compile Include="Common\IEntity.cs" />
+    <Compile Include="Model\Algorithm.cs" />
     <Compile Include="Model\Chapter.cs" />
     <Compile Include="Model\Choice.cs" />
     <Compile Include="Model\Exam.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Model\Image.cs" />
     <Compile Include="Model\LoginUser.cs" />
     <Compile Include="Model\Question.cs" />
+    <Compile Include="Model\SavedPaper.cs" />
     <Compile Include="Model\Section.cs" />
     <Compile Include="Model\UserExamAttempt.cs" />
     <Compile Include="Model\UserExamAttemptQuestion.cs" />

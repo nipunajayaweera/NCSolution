@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201707161918441_sectiontable.Designer.cs">
       <DependentUpon>201707161918441_sectiontable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707171729475_addingalgorithmandsavedpaper.cs" />
+    <Compile Include="Migrations\201707171729475_addingalgorithmandsavedpaper.Designer.cs">
+      <DependentUpon>201707171729475_addingalgorithmandsavedpaper.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707161918441_sectiontable.resx">
       <DependentUpon>201707161918441_sectiontable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707171729475_addingalgorithmandsavedpaper.resx">
+      <DependentUpon>201707171729475_addingalgorithmandsavedpaper.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

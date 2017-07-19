@@ -33,7 +33,7 @@ namespace NCSolution.DomainModel.Model
         public virtual ICollection<Image> Images { get; set; }
         public virtual ICollection<Choice> Choices { get; set; }
         public virtual ICollection<UserExamAttemptQuestion> UserExamAttemptQuestionAnswer { get; set; }
-
+        public virtual ICollection<SavedPaper> SavedPapers { get; set; }
 
 
 

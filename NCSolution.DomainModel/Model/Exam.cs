@@ -18,11 +18,21 @@ namespace NCSolution.DomainModel.Model
         public string ExamDescription { get; set; }
         public  new DateTime CreatedDate { get; set; }
         public int TotalQuestions { get; set; }
+        
 
         [JsonIgnore]
         public virtual ICollection<UserExamAttempt> UserExamAttempts { get; set; }
 
         public virtual ICollection<ExamChapter> ExamChapters { get; set; }
+        public virtual ICollection<SavedPaper> SavedPapers{ get; set; }
+
+        
+
+
+
+        [ForeignKey("Algorithm")]
+        public int AlgorithmId { get; set; }
+        public Algorithm Algorithm { get; set; }
 
 
 
