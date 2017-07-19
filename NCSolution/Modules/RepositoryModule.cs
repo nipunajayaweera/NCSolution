@@ -23,9 +23,11 @@ namespace NCSolution.Modules
             builder.RegisterType(typeof(UnitOfWork)).As(typeof(IUnitOfWork)).InstancePerRequest();
 
             builder.RegisterType(typeof(LoginUserRepository)).As(typeof(ILoginUserRepository)).InstancePerLifetimeScope();
-
-
             builder.RegisterType(typeof(LoginUserService)).As(typeof(ILoginUserService)).InstancePerLifetimeScope();
+
+            builder.RegisterType(typeof(ExamRepository)).As(typeof(IExamRepository)).InstancePerLifetimeScope();
+            builder.RegisterType(typeof(ExamService)).As(typeof(IExamService)).InstancePerLifetimeScope();
+
 
 
 

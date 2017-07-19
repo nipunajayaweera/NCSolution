@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DDL\" />
-    <Folder Include="DML\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DML\20170720DML.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
