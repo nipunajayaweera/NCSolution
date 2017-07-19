@@ -26,6 +26,7 @@ namespace NCSolution.Controllers
         // GET: Exam
         public ActionResult Index()
         {
+
             List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
 
 
