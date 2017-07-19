@@ -48,6 +48,7 @@
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Common\IAuditableEntity.cs" />
     <Compile Include="Common\IEntity.cs" />
+    <Compile Include="Dto\ExamDto.cs" />
     <Compile Include="Model\Algorithm.cs" />
     <Compile Include="Model\Chapter.cs" />
     <Compile Include="Model\Choice.cs" />

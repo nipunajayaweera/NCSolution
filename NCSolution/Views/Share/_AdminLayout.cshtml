@@ -20,6 +20,12 @@
     <script type="text/javascript" src="~/assets/js/core/libraries/jquery.min.js"></script>
     <script type="text/javascript" src="~/assets/js/core/libraries/bootstrap.min.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/loaders/blockui.min.js"></script>
+
+    <!-- Exam data table-->
+    <script type="text/javascript" src="~/assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/pages/datatables_basic.js"></script>
+    <script type="text/javascript" src="~/Scripts/Pages/ExamDatatable.js"></script>
+
     <!-- /core JS files -->
     <!-- Theme JS files -->
     <script type="text/javascript" src="~/assets/js/plugins/ui/prism.min.js"></script>
@@ -32,8 +38,9 @@
     <script type="text/javascript" src="~/assets/js/pages/form_checkboxes_radios.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/ui/ripple.min.js"></script>
 
-    @*wantedscrits*@
-    <script type="text/javascript" src="~/assets/js/pages/datatables_basic.js"></script>
+    
+
+
     <script>
         var topNavBar = 50;
         var footer = 48;
@@ -89,18 +96,10 @@
                                 <!-- Main -->
 
                                 <li><a href="@Url.Action("Index","Admin")"><i class="icon-home2"></i> <span>Home</span></a></li>
+                                <li><a href="@Url.Action("Index","Exam")"><i class="icon-book"></i> <span>Exam</span></a></li>
                                 <li><a href="@Url.Action("AddNewQuestion","Admin")"><i class="icon-question6"></i> <span>Add New Question</span></a></li>
                                 <li><a href="@Url.Action("ShowQuestion","Admin")"><i class="icon-book-play"></i> <span>Add New Question</span></a></li>
-                                <li>
-                                    <a href="#"><i class="icon-stack2"></i> <span>Analysis</span></a>
-                                    <ul>
-                                        <li><a href="#">User analysis</a></li>
-                                        <li><a href="#">Question analysis</a></li>
-                                        <li><a href="#">Atempt analysis</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                    
+                                
                                 <!-- /main -->
 
 
