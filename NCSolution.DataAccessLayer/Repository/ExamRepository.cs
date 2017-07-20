@@ -26,10 +26,8 @@ namespace NCSolution.DataAccessLayer.Repository
 
         public IEnumerable<ExamChapterDto> GetChapters(int examId)
         {
-            var parm = new SqlParameter("@examId", SqlDbType.Int);
-            parm.Value = examId;
-            //error
-            return _entities.Database.SqlQuery<ExamChapterDto>("GetChapterByExam {0}",parm).ToList<ExamChapterDto>();
+        
+            return _entities.Database.SqlQuery<ExamChapterDto>("GetChapterByExam @examId={0}", examId).ToList<ExamChapterDto>();
 
         }
     }
