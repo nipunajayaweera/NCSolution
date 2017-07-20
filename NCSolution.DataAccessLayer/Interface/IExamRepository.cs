@@ -12,5 +12,6 @@ namespace NCSolution.DataAccessLayer.Interface
     public interface IExamRepository : IGenericRepository<Exam>
     {
         IEnumerable<ExamDto> GetAllExamDetails();
+        IEnumerable<ExamChapterDto> GetChapters(int examId);
     }
 }

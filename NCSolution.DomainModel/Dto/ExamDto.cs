@@ -13,4 +13,12 @@ namespace NCSolution.DomainModel.Dto
         public int TotalQuestions { get; set; }
 
     }
+
+    public class ExamChapterDto
+    {
+        public string ChapterName { get; set; }
+        public int NumberOfQuestionsFromChapter { get; set; }
+    }
+
+
 }
