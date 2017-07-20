@@ -26,5 +26,10 @@ namespace NCSolution.BussinessLayer.Contracts
         {
             return _examRepository.GetAllExamDetails();    
         }
+
+        public IEnumerable<ExamChapterDto> GetChapters(int examId)
+        {
+            return _examRepository.GetChapters(examId);
+        }
     }
 }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using NCSolution.DomainModel.Dto;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace NCSolution.DataAccessLayer.Repository
 {
@@ -20,6 +22,13 @@ namespace NCSolution.DataAccessLayer.Repository
         public IEnumerable<ExamDto> GetAllExamDetails()
         {
             return _entities.Database.SqlQuery<ExamDto>("GetAllExams").ToList<ExamDto>();
+        }
+
+        public IEnumerable<ExamChapterDto> GetChapters(int examId)
+        {
+        
+            return _entities.Database.SqlQuery<ExamChapterDto>("GetChapterByExam @examId={0}", examId).ToList<ExamChapterDto>();
+
         }
     }
 }

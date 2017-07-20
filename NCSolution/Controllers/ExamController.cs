@@ -27,12 +27,15 @@ namespace NCSolution.Controllers
         public ActionResult Index()
         {
 
-            List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
-
+            //List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
+            List<ExamChapterDto> examChapters = _examService.GetChapters(1).ToList<ExamChapterDto>();
 
 
 
             return View();
         }
+
+
+     
     }
 }

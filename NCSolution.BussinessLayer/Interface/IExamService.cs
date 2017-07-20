@@ -11,5 +11,6 @@ namespace NCSolution.BussinessLayer.Interface
     public interface IExamService
     {
         IEnumerable<ExamDto> GetAllExamDetails();
+        IEnumerable<ExamChapterDto> GetChapters(int examId);
     }
 }
