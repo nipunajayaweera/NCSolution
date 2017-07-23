@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 
 namespace NCSolution.Controllers
 {
@@ -27,15 +29,32 @@ namespace NCSolution.Controllers
         public ActionResult Index()
         {
 
-            //List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
-            List<ExamChapterDto> examChapters = _examService.GetChapters(1).ToList<ExamChapterDto>();
+            //
+           // List<ExamChapterDto> examChapters = _examService.GetChapters(1).ToList<ExamChapterDto>();
 
 
 
             return View();
         }
 
+        [HttpGet]
+        public JsonResult GetExamDataToJson()
+        {
+            List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
+            var examListObject = exams.Select(i=> 
+                new
+                {
+                    ExamDescription = i.ExamDescription,
+                    CreateDate = i.CreatedDate.ToString("MM/dd/yyyy"),
+                    TotalQuestions = i.TotalQuestions
+                });
 
+
+            var a = Json(examListObject, JsonRequestBehavior.AllowGet);
+            return a;
+        }
+
+        
      
     }
 }

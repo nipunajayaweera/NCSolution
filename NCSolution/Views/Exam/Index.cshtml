@@ -3,6 +3,16 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Share/_AdminLayout.cshtml";
 }
+@section Styles {
+    <link href="@Url.Content("~/Scripts/pages/exam.css")" rel="stylesheet" type="text/css" />
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/assets/js/pages/datatables_data_sources.js")"></script>
+}
+
+
 
 
 <div class="panel panel-flat">
@@ -20,43 +30,23 @@
     </div>
 
 
-    <table id="example" class="table datatable-js" >
+    <table class="table" id="exampleTable">
         <thead>
-            <tr>
-                <th>Engine</th>
-                <th>Browser</th>
-                <th>Platform</th>
-                <th>Version</th>
-                <th>Grade</th>
-            </tr>
+        <tr>
+            <th>ExamDescription</th>
+            <th>CreateDate</th>
+            <th>TotalQuestions</th>
+        </tr>
         </thead>
+        <tbody></tbody>
     </table>
 </div>
 
 
-<ul class="fab-menu" data-fab-toggle="click">
-    <li>
-        <a class="fab-menu-btn btn bg-blue btn-float btn-rounded btn-icon fab-menu fab-menu-fixed fab-menu-bottom-right ">
+<div class="fab-menu">
+    <div>
+        <button class="fab-menu-btn btn bg-blue btn-float btn-rounded btn-icon fab-menu fab-menu-fixed fab-menu-bottom-right"  id="new-exam-fab">
             <i class="fab-icon-open icon-plus3"></i>
-            <i class="fab-icon-close icon-cross2"></i>
-        </a>
-
-        <ul class="fab-menu-inner">
-            <li>
-                <div data-fab-label="Compose email">
-                    <a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
-                        <i class="icon-pencil"></i>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div data-fab-label="Conversations">
-                    <a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
-                        <i class="icon-bubbles7"></i>
-                    </a>
-                    <span class="badge bg-primary-400">5</span>
-                </div>
-            </li>
-        </ul>
-    </li>
-</ul>
+        </button>
+    </div>
+</div>
