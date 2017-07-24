@@ -5,10 +5,20 @@
     <script>
     $(document).ready(function(){
         $("#NIC").blur(function(){
-            $.post("@Url.Action("Register", "User")");
-            
+            //$.post("@Url.Action("Register", "User")");
+            //window.location.href = '@Url.Action("Register", "User", new { id = "w" })';
+            var x = document.getElementById("NIC").id;
+            AddToCart(x);
         });
     });
+        function AddToCart(id) {
+            $.ajax({
+                url: '/User/Register',
+                data: { id: id }
+            }).done(function () {
+                alert('Added');
+            });
+        }
     </script>
 <div class="tab-pane fade in active " id="basic-tab2">
     <form action="http://demo.interface.club/limitless/layout_2/LTR/material/index.html">
