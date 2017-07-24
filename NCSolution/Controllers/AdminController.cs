@@ -29,12 +29,12 @@ namespace NCSolution.Controllers
                                                     new SelectListItem {Text = "Chapter 7", Value = "4"},
                                                 }, "Value", "Text");
 
-            model.AnswersList = new SelectList(new List<SelectListItem>
+            model.SectionList = new SelectList(new List<SelectListItem>
                                                 {
-                                                    new SelectListItem {Text = "Answer 1", Value = "1"},
-                                                    new SelectListItem {Text = "Answer 2", Value = "2"},
-                                                    new SelectListItem {Text = "Answer 3", Value = "3"},
-                                                    new SelectListItem {Text = "Answer 4", Value = "4"},
+                                                    new SelectListItem {Text = "section 1", Value = "1"},
+                                                    new SelectListItem {Text = "section 2", Value = "2"},
+                                                    new SelectListItem {Text = "section 3", Value = "3"},
+                                                    new SelectListItem {Text = "section 4", Value = "4"},
                                                 }, "Value", "Text");
             return View("Add_New_Question", model);
         }

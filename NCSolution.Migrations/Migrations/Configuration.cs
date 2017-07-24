@@ -1,6 +1,5 @@
 namespace NCSolution.Migrations.Migrations
 {
-    using NCSolution.DomainModel.Model;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -8,12 +7,6 @@ namespace NCSolution.Migrations.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<NCSolution.DataAccessLayer.NCSolutionDbContext>
     {
-
-        LoginUser kumaraLogin;
-        LoginUser tokeLogin;
-        Exam examTwo;
-        Exam examOne;
-
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
@@ -33,17 +26,6 @@ namespace NCSolution.Migrations.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
-
-
-
-          
-
-
-
-
-
-
         }
     }
 }

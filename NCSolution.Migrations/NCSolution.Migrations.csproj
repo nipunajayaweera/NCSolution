@@ -47,73 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201704282118158_int.cs" />
-    <Compile Include="Migrations\201704282118158_int.Designer.cs">
-      <DependentUpon>201704282118158_int.cs</DependentUpon>
+    <Compile Include="Migrations\201707160809055_julydeploy.cs" />
+    <Compile Include="Migrations\201707160809055_julydeploy.Designer.cs">
+      <DependentUpon>201707160809055_julydeploy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704282120432_int1.cs" />
-    <Compile Include="Migrations\201704282120432_int1.Designer.cs">
-      <DependentUpon>201704282120432_int1.cs</DependentUpon>
+    <Compile Include="Migrations\201707161918441_sectiontable.cs" />
+    <Compile Include="Migrations\201707161918441_sectiontable.Designer.cs">
+      <DependentUpon>201707161918441_sectiontable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704282145586_chapter_chapterexam_models.cs" />
-    <Compile Include="Migrations\201704282145586_chapter_chapterexam_models.Designer.cs">
-      <DependentUpon>201704282145586_chapter_chapterexam_models.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704282148426_chapter_chapterexam_add_AuditableEntity.cs" />
-    <Compile Include="Migrations\201704282148426_chapter_chapterexam_add_AuditableEntity.Designer.cs">
-      <DependentUpon>201704282148426_chapter_chapterexam_add_AuditableEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704282158510_question_image_model.cs" />
-    <Compile Include="Migrations\201704282158510_question_image_model.Designer.cs">
-      <DependentUpon>201704282158510_question_image_model.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704282201527_question_image_model_AuditableEntity.cs" />
-    <Compile Include="Migrations\201704282201527_question_image_model_AuditableEntity.Designer.cs">
-      <DependentUpon>201704282201527_question_image_model_AuditableEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704282204525_choiceModel.cs" />
-    <Compile Include="Migrations\201704282204525_choiceModel.Designer.cs">
-      <DependentUpon>201704282204525_choiceModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704282210002_UserExamAttemptQuestion.cs" />
-    <Compile Include="Migrations\201704282210002_UserExamAttemptQuestion.Designer.cs">
-      <DependentUpon>201704282210002_UserExamAttemptQuestion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704282213357_UserExamAttemptQuestion_AuditableEntity.cs" />
-    <Compile Include="Migrations\201704282213357_UserExamAttemptQuestion_AuditableEntity.Designer.cs">
-      <DependentUpon>201704282213357_UserExamAttemptQuestion_AuditableEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705011102333_insertData1.cs" />
-    <Compile Include="Migrations\201705011102333_insertData1.Designer.cs">
-      <DependentUpon>201705011102333_insertData1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705011105517_insertData2.cs" />
-    <Compile Include="Migrations\201705011105517_insertData2.Designer.cs">
-      <DependentUpon>201705011105517_insertData2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705011305089_insertQuestionchoices.cs" />
-    <Compile Include="Migrations\201705011305089_insertQuestionchoices.Designer.cs">
-      <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705021931219_add2feildstoLoginuser.cs" />
-    <Compile Include="Migrations\201705021931219_add2feildstoLoginuser.Designer.cs">
-      <DependentUpon>201705021931219_add2feildstoLoginuser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705030843260_insertExamchapter.cs" />
-    <Compile Include="Migrations\201705030843260_insertExamchapter.Designer.cs">
-      <DependentUpon>201705030843260_insertExamchapter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705030848331_insertQuestionpart2.cs" />
-    <Compile Include="Migrations\201705030848331_insertQuestionpart2.Designer.cs">
-      <DependentUpon>201705030848331_insertQuestionpart2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705030918426_userloginExamsdata_insert.cs" />
-    <Compile Include="Migrations\201705030918426_userloginExamsdata_insert.Designer.cs">
-      <DependentUpon>201705030918426_userloginExamsdata_insert.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705030945578_inserdatatoexamchpter2.cs" />
-    <Compile Include="Migrations\201705030945578_inserdatatoexamchpter2.Designer.cs">
-      <DependentUpon>201705030945578_inserdatatoexamchpter2.cs</DependentUpon>
+    <Compile Include="Migrations\201707171729475_addingalgorithmandsavedpaper.cs" />
+    <Compile Include="Migrations\201707171729475_addingalgorithmandsavedpaper.Designer.cs">
+      <DependentUpon>201707171729475_addingalgorithmandsavedpaper.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,56 +77,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704282118158_int.resx">
-      <DependentUpon>201704282118158_int.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707160809055_julydeploy.resx">
+      <DependentUpon>201707160809055_julydeploy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282120432_int1.resx">
-      <DependentUpon>201704282120432_int1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707161918441_sectiontable.resx">
+      <DependentUpon>201707161918441_sectiontable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282145586_chapter_chapterexam_models.resx">
-      <DependentUpon>201704282145586_chapter_chapterexam_models.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282148426_chapter_chapterexam_add_AuditableEntity.resx">
-      <DependentUpon>201704282148426_chapter_chapterexam_add_AuditableEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282158510_question_image_model.resx">
-      <DependentUpon>201704282158510_question_image_model.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282201527_question_image_model_AuditableEntity.resx">
-      <DependentUpon>201704282201527_question_image_model_AuditableEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282204525_choiceModel.resx">
-      <DependentUpon>201704282204525_choiceModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282210002_UserExamAttemptQuestion.resx">
-      <DependentUpon>201704282210002_UserExamAttemptQuestion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704282213357_UserExamAttemptQuestion_AuditableEntity.resx">
-      <DependentUpon>201704282213357_UserExamAttemptQuestion_AuditableEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705011102333_insertData1.resx">
-      <DependentUpon>201705011102333_insertData1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705011105517_insertData2.resx">
-      <DependentUpon>201705011105517_insertData2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705011305089_insertQuestionchoices.resx">
-      <DependentUpon>201705011305089_insertQuestionchoices.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705021931219_add2feildstoLoginuser.resx">
-      <DependentUpon>201705021931219_add2feildstoLoginuser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705030843260_insertExamchapter.resx">
-      <DependentUpon>201705030843260_insertExamchapter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705030848331_insertQuestionpart2.resx">
-      <DependentUpon>201705030848331_insertQuestionpart2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705030918426_userloginExamsdata_insert.resx">
-      <DependentUpon>201705030918426_userloginExamsdata_insert.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705030945578_inserdatatoexamchpter2.resx">
-      <DependentUpon>201705030945578_inserdatatoexamchpter2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707171729475_addingalgorithmandsavedpaper.resx">
+      <DependentUpon>201707171729475_addingalgorithmandsavedpaper.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -21,7 +21,7 @@ namespace NCSolution.Models
         public string CorrectAnswer { get; set; }
         public string Chapter { get; set; }
         public SelectList ChaptersList { get; set; }
-        public SelectList AnswersList { get; set; }
+        public SelectList SectionList { get; set; }
     }
     
 }
