@@ -51,10 +51,12 @@
     <Compile Include="Common\IGenericRepository.cs" />
     <Compile Include="Common\IUnitOfWork.cs" />
     <Compile Include="Common\UnitOfWork.cs" />
+    <Compile Include="Interface\IAdminRepository.cs" />
     <Compile Include="Interface\IExamRepository.cs" />
     <Compile Include="Interface\ILoginUserRepository.cs" />
     <Compile Include="NCSolutionDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AdminRepository.cs" />
     <Compile Include="Repository\ExamRepository.cs" />
     <Compile Include="Repository\LoginUserRepository.cs" />
   </ItemGroup>

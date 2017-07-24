@@ -743,6 +743,7 @@
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\pages\exam.css" />
+    <Content Include="Scripts\ShowQuestionJS.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
