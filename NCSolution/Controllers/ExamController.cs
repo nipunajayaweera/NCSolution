@@ -30,14 +30,14 @@ namespace NCSolution.Controllers
         {
 
             //
-           // List<ExamChapterDto> examChapters = _examService.GetChapters(1).ToList<ExamChapterDto>();
+            // List<ExamChapterDto> examChapters = _examService.GetChapters(1).ToList<ExamChapterDto>();
 
+            List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
 
 
             return View();
         }
-
-        [HttpGet]
+        
         public JsonResult GetExamDataToJson()
         {
             List<ExamDto> exams = _examService.GetAllExamDetails().ToList<ExamDto>();
@@ -50,8 +50,10 @@ namespace NCSolution.Controllers
                 });
 
 
-            var a = Json(examListObject, JsonRequestBehavior.AllowGet);
-            return a;
+            //var a = Json(examListObject, JsonRequestBehavior.AllowGet);
+            //return a;
+
+            return Json(new { data = examListObject }, JsonRequestBehavior.AllowGet);
         }
 
         
