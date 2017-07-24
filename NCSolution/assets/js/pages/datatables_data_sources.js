@@ -170,10 +170,16 @@ $(document).ready(function() {
   
 
 
-    var table = $("#GetExamDataTable").dataTable({
+    var table = $("#GetExamDataTable").DataTable({
         ajax: "/Exam/GetExamDataToJson",
         dataSrc: "data",
         columns: [
+            {
+                "className": 'details-control',
+                "orderable": false,
+                "data": null,
+                "defaultContent": ''
+            },
             { data: "ExamDescription" },
             { data: "CreateDate"},
             { data: "TotalQuestions" }
@@ -185,7 +191,6 @@ $(document).ready(function() {
     $('#GetExamDataTable tbody').on('click', 'td.details-control', function () {
         var tr = $(this).closest('tr');
         var row = table.row(tr);
-
         if (row.child.isShown()) {
             // This row is already open - close it
             row.child.hide();
