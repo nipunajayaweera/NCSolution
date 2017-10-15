@@ -3,6 +3,7 @@ using NCSolution.DomainModel.Dto;
 using NCSolution.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -94,5 +95,78 @@ namespace NCSolution.Controllers
 
             return list;
         }
+
+        public ActionResult ShowQuestionTestNew()
+        {
+            List<Chapter> ChapterList = new List<Chapter>();
+            ChapterList = CreateChaptes();
+            return View(ChapterList);
+        }
+
+
+
+
+
+        private List<Chapter> CreateChaptes()
+        {
+            //DataSet set = new DataSet("DataBase");
+
+            //DataTable Question = new DataTable("Question");
+            //Question.Columns.Add("Id");
+            //Question.Columns.Add("Question");
+            //Question.Columns.Add("Id");
+            //Question.Columns.Add("Id");
+            List<Chapter> ChapterList = new List<Chapter>();
+            for (int i = 1; i < 8; i++)
+            {
+                List<Section> SecL = new List<Section>();
+                for (int j = 1; j < 5; j++)
+                {
+                    List<Question> queL = new List<Question>();
+                    for (int k = 0; k < 5; k++)
+                    {
+                        List<Answer> ansL = new List<Answer>();
+                        for (int x = 1; x < 5; x++)
+                        {
+                            Answer ans = new Answer
+                            {
+                                Id = x,
+                                AnswerName = "Answer = " + x
+                            };
+                            ansL.Add(ans);
+                        }
+
+
+                        Question que = new Question
+                        {
+                            Id = k,
+                            QuestionBody = "Question - " + k,
+                            CorrectAnswerId = 3,
+                            AnswerList = ansL
+                        };
+                        queL.Add(que);
+                    }
+
+                    Section sec = new Section
+                    {
+                        SectionId = j+27*i,
+                        SectionName = "Section - " + j,
+                        QuestionList = queL
+                    };
+                    SecL.Add(sec);
+                }
+                Chapter ch = new Chapter
+                {
+                    ChapterId = i,
+                    ChapterName = "Chapter - " + i,
+                    SectionList = SecL
+                };
+                ChapterList.Add(ch);
+            }
+            return ChapterList;
+
+        }
+
+
     }
 }

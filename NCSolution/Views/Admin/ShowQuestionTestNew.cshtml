@@ -1,0 +1,56 @@
+﻿@model IEnumerable<NCSolution.Models.Chapter>
+@{
+    ViewBag.Title = "ShowQuestionTestNew";
+    Layout = "~/Views/Share/_AdminLayout.cshtml";
+}
+
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h3 class="panel-title">Exam</h3>
+    </div>
+    <div class="panel-body">
+        @foreach (var chapter in Model)
+        {
+            <h2 data-toggle="collapse" data-target="#@chapter.ChapterId" style="background-color:#a2bad1">@chapter.ChapterName</h2>
+            <div id="@chapter.ChapterId" class="collapse" style="border-left:10px solid;border-color: #064684;">
+
+                @foreach (var sect in chapter.SectionList)
+                {
+                    <div style="margin-left:5px;">
+                        <h2 data-toggle="collapse" data-target="#sec-@sect.SectionId" style="background-color:#a7abae">@sect.SectionName</h2>
+                        <div id="sec-@sect.SectionId" class="collapse">
+
+                            <div class="panel panel-default" style="border-left:10px solid;border-color: #1b62a8;">
+                                @foreach (var ques in sect.QuestionList)
+                                {
+                                    <div class="panel-body">
+                                        
+                                        <h2><span>@ques.Id</span>@ques.QuestionBody</h2>
+                                                <div>
+                                                    <ol>
+                                                        @foreach (var ans in ques.AnswerList)
+                                                        {
+                                                        <li>@ans.AnswerName</li>
+                                                        }
+                                                    </ol>
+                                                
+                                                </div>
+
+                                            
+                                        
+                                    </div>
+
+                                }
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+
+
+            </div>
+            }
+    </div>
+</div>
+

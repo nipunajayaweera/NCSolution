@@ -3,33 +3,21 @@
 <div class="alert alert-info alert-styled-left alert-arrow-left alert-component">
     <h6 class="alert-heading text-semibold">Question @Model.QuestionNo </h6>
     Main sidebar can be completely hidden. To use this option, just change button class to <code>.sidebar-main-hide</code> and main sidebar will be hidden on button click.
-    <h3>@Model.Question</h3>
+    <h3>@Html.LabelFor(m=>m.Question)</h3>
     <div style="height:300px;">
+@using (Html.BeginForm("NextButtonAction", "Default", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+{
+    foreach (var answer in  Model.AnswerList)
+    {
 
-        <div class="form-group pt-15">
-            <label class="text-semibold">Left stacked styled</label>
-            
-            <div class="radio">
-                <label>
-                    <div class="choice"><span class=""><input type="radio" name="stacked-radio-left" class="styled"></span></div>
-                    Unselected styled
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <div class="choice"><span class=""><input type="radio" name="stacked-radio-left" class="styled"></span></div>
-                    Unselected styled
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <div class="choice"><span class=""><input type="radio" name="stacked-radio-left" class="styled"></span></div>
-                    Unselected styled
-                </label>
-            </div>
-        </div>
+            @Html.RadioButtonFor(m => m.SelectedAnswerId, answer.Id)
+            @answer.AnswerName
 
-
-        <button type="submit" class="btn btn-primary legitRipple">Next <i class="icon-arrow-right14 position-right"></i></button>
+            <br />
+        }
+        @Html.HiddenFor(m => m.QuestionIndex)
+        <button type="submit" class="btn legitRipple pull-left" style="background-color:#002f87;border-color:#002f87; color:#fff">Commit/Next <i class="icon-arrow-right14 position-right"></i></button>
+}
     </div>
 </div>
